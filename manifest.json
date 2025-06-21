@@ -1,0 +1,15 @@
+
+{
+  "name": "Ludicrous Speed Videos",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Automatically sets every page’s first <video> element to 2.5× playback speed.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
